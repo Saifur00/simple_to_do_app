@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output/tailwind.css" />
+    <script
+      src="https://kit.fontawesome.com/4b4e065f44.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>To Do App-By Nafi</title>
+  </head>
+  <body class="bg-green-200">
+    <h1 class="text-center mt-7 text-cyan-900 text-4xl font-bold">To Do App</h1>
+    <div class="mx-auto mt-14 flex justify-center">
+      <div class="bg-red-400 p-6">
+        <div>
+          <form class="flex justify-center" id="search">
+            <input
+              name="search_item"
+              class="w-full px-2"
+              type="text"
+              placeholder="Search Todo items"
+            />
+          </form>
+        </div>
+        <div>
+          <ul id="to_do_items">
+            <li
+              class="border-2 border-red-600 bg-red-600 px-2 mb-4 flex justify-between text-cyan-100"
+            >
+              <span>Learn Javascript</span>
+              <i class="fa-solid fa-trash mt-1"></i>
+            </li>
+            <li
+              class="border-2 border-red-600 bg-red-600 px-2 mb-4 flex justify-between text-cyan-100"
+            >
+              <span>Try to work with Vitest</span>
+              <i class="fa-solid fa-trash mt-1"></i>
+            </li>
+            <li
+              class="border-2 border-red-600 bg-red-600 px-2 mb-4 flex justify-between text-cyan-100"
+            >
+              <span>Get on with react after JS</span>
+              <i class="fa-solid fa-trash mt-1"></i>
+            </li>
+          </ul>
+        </div>
+        <form id="add_item" class="flex justify-center">
+          <input
+            class="w-full px-2"
+            name="addedItem"
+            type="text"
+            placeholder="Add Todo item"
+          />
+        </form>
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
